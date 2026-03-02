@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran Les</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Pendaftaran Les</h1>
+
+<div class="form-container">
+    <input type="text" id="nama" placeholder="Nama Siswa">
+
+    <select id="jenjang">
+        <option value="">-- Pilih Jenjang --</option>
+        <option value="TK">TK</option>
+        <option value="SD">SD</option>
+        <option value="SMP">SMP</option>
+    </select>
+
+    <select id="jenisKelamin">
+        <option value="">-- Jenis Kelamin --</option>
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+    </select>
+
+    <input type="text" id="orangTua" placeholder="Nama Orang Tua">
+    <input type="text" id="noHp" placeholder="No HP">
+
+    <select id="paket">
+        <option value="">-- Pilih Paket Les --</option>
+    </select>
+
+    <button onclick="daftar()">Daftar</button>
+</div>
+
+<h2>Data Pendaftar</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nama</th>
+            <th>Jenjang</th>
+            <th>JK</th>
+            <th>Orang Tua</th>
+            <th>No HP</th>
+            <th>Paket</th>
+            <th>Status</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody id="dataTable"></tbody>
+</table>
+
+<h2>Sisa Kuota</h2>
+<ul id="kuotaList"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
